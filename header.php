@@ -31,20 +31,38 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<!--<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">-->
-						</a>
-					</div>
-					<!-- /logo -->
+			
 
+				<div class="top-bar">
 					<!-- nav -->
 					<nav class="nav" role="navigation">
+						<img a href="/" class="logo" src="\wp-content\themes\calming-audio\img\ca-logo-white.svg" /a>
 						<?php calmingaudio_nav(); ?>
 					</nav>
 					<!-- /nav -->
+				</div>
+
+			<div class="header-icons">
+					<!-- social media icons -->
+					<div class="social-media">
+						<img src= "\wp-content\themes\calming-audio\img\twitter.svg">
+						<img src= "\wp-content\themes\calming-audio\img\facebook.svg"> 
+						<img src= "\wp-content\themes\calming-audio\img\github.svg"> 
+					</div>
+					<!-- social media icons -->
+
+					<!-- play controls -->
+					<div class="play-controls">
+						<img src= "\wp-content\themes\calming-audio\img\volume-x.svg">
+						<img src= "\wp-content\themes\calming-audio\img\volume-2.svg">
+						<img src= "\wp-content\themes\calming-audio\img\pause-circle.svg">
+						<img src= "\wp-content\themes\calming-audio\img\play-circle.svg">
+					</div>
+					<!-- play controls -->
+			</div>
+
+
+
 
 			</header>
 			<!-- /header -->
