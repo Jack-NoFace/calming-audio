@@ -40,8 +40,8 @@ nav {
 
     }
 
-    li:active {
-        background-color: rgba(0,0,0,0.8);
+    li.current_page_item {
+        background-color: rgba(0,0,0,0.6);
     }
 
     li a {
