@@ -63,7 +63,7 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // HTML5 Blank navigation
-function html5blank_nav()
+function calmingaudio_nav()
 {
 	wp_nav_menu(
 	array(
