@@ -7,32 +7,36 @@ header {
     }
 
 
-
-.logo {
-    width: 50px;
-    height: 50px;
-}
-
-.top-bar {
-    display: flex;
-}
-
-
 nav {
-
-    .nav {
+    
+    &.nav {
         display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo {
+    width: 63px;
+    height: 63px;
+    margin-left: 1em;
+    fill: $color-white;
+    }   
+
+    .logo a {
+    margin: 0;
+    padding: 0;
     }
 
     ul {
         margin: 0;
+        padding: 10px;
         list-style: none;
-        padding: 1em 1em;
         text-align: right;
     }
 
     li {
-        padding: 2px;
+        
+        margin: 2px 1px;
         display: inline-block;
         border-radius: 50px;
         background-color: rgba(255,255,255,0.2);
