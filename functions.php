@@ -449,4 +449,14 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+function namespace_add_custom_types( $query ) {
+  if( (is_category() || is_tag()) && $query->is_archive() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'Soundbyte'
+        ));
+    }
+    return $query;
+}
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+
 ?>
