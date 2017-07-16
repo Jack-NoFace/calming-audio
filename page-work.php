@@ -6,7 +6,7 @@
 
 			<h1><?php the_title(); ?></h1>
 
-		<?php
+		<?php 
         $args = array (
             'post_type'         => 'Soundbyte',
 			'category_name'		=> 'work'
