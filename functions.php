@@ -459,4 +459,60 @@ function namespace_add_custom_types( $query ) {
 }
 add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
 
+// Include custom post types in 'At a glance' widget
+add_action( 'dashboard_glance_items', 'at_glance_content_ui_patterns' );
+function at_glance_content_ui_patterns() {
+    $args = array(
+        'public' => true,
+        '_builtin' => false
+    );
+    $output = 'object';
+    $operator = 'and';
+
+    $post_types = get_post_types( $args, $output, $operator );
+    foreach ( $post_types as $post_type ) {
+        $num_posts = wp_count_posts( $post_type->name );
+        $num = number_format_i18n( $num_posts->publish );
+        $text = _n( $post_type->labels->singular_name, $post_type->labels->name, intval( $num_posts->publish ) );
+        if ( current_user_can( 'edit_posts' ) ) {
+            $output = '<a href="edit.php?post_type=' . $post_type->name . '">' . $num . ' ' . $text . '</a>';
+            echo '<li class="post-count ' . $post_type->name . '-count">' . $output . '</li>';
+        }
+    }
+}
+
+// Allow SVG files to be uploaded to the media library
+add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
+
+  global $wp_version;
+  if ( $wp_version !== '4.7.1' ) {
+     return $data;
+  }
+
+  $filetype = wp_check_filetype( $filename, $mimes );
+
+  return [
+      'ext'             => $filetype['ext'],
+      'type'            => $filetype['type'],
+      'proper_filename' => $data['proper_filename']
+  ];
+
+}, 10, 4 );
+
+function cc_mime_types( $mimes ){
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
+function fix_svg() {
+  echo '<style type="text/css">
+        .attachment-266x266, .thumbnail img {
+             width: 100% !important;
+             height: auto !important;
+        }
+        </style>';
+}
+add_action( 'admin_head', 'fix_svg' );
+
 ?>
