@@ -470,6 +470,8 @@ html {
   position: relative;
   min-height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /*///////////////
@@ -489,6 +491,66 @@ body {
 */
 header {
   background-color: #8800FF;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.top-bar {
+  display: flex;
+}
+
+nav .nav {
+  display: flex;
+}
+nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 1em 1em;
+  text-align: right;
+}
+nav li {
+  padding: 2px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+}
+nav li:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-icons {
+  display: flex;
+}
+
+.play-controls {
+  text-align: right;
+  padding: 1em;
+}
+
+.play-controls img {
+  padding: 2px;
+}
+
+.social-media {
+  text-align: left;
+  padding: 1em;
+}
+
+.social-media img {
+  display: inline;
+  width: 28px;
+  height: 28px;
+  padding: 2px;
+  /*border: solid 1px black;
+  border-radius: 50%;*/
 }
 
 /*for reference when get to it
