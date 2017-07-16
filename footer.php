@@ -3,7 +3,7 @@
 
 				<!-- copyright -->
 				<p class="copyright">
-				<p>Designed by <a href="https://whatjackhasmade.co.uk">Jack Davies & Developed by <a href="https://benmichaeljoy.com">Ben Joy</a></a></p>
+				<p>Designed by <a href="https://whatjackhasmade.co.uk">Jack Davies</a> & Developed by <a href="https://benmichaeljoy.com">Ben Joy</a></a></p>
 				<p>&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. </p>
 				<!-- /copyright -->
 
