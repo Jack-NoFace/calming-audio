@@ -1,0 +1,40 @@
+/*///////////////
+/// FOOTER
+*///////////////
+
+footer {
+    padding: $spacing-large;
+    color: $color-white;
+    background-color: darken($color-black, 2.5%);
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $color-white;
+    }
+
+    h4 {
+        margin-bottom: $spacing-small;
+        margin-top: $spacing-large;
+    }
+
+    .logo {
+        min-width: 50px;
+        width: 50px;
+
+        &__path {
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+            fill: none;
+            stroke: $color-white;
+            stroke-width: 10;
+        }
+
+    }
+
+    @include bp-min-width($bp-tablet) {
+        padding-bottom: $spacing-huge*2;
+    }
+}

@@ -1,0 +1,31 @@
+/*
+Theme Name: Calming Audio Theme
+Theme URI: http://www.calming.audio/
+Author: Ben Joy & Jack Davies
+Description: Calm yourself.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*///////////////
+/// MAIN
+*///////////////
+
+@import 'vars.scss';
+
+
+@import 'mixins/active-states.scss';
+@import 'mixins/media-queries.scss';
+@import 'mixins/rem.scss';
+
+
+@import 'reset/box-sizing.scss';
+@import 'reset/normalize.scss';
+
+
+@import 'base/footer.scss';
+@import 'base/header.scss';
