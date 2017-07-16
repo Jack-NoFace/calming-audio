@@ -463,10 +463,49 @@ textarea {
 }
 
 /*///////////////
-/// FOOTER
+/// HTML
 */
+html {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+
+/*///////////////
+/// BODY
+*/
+body {
+  margin: 0 0 100px 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /*///////////////
 /// HEADER
 */
+/*///////////////
+/// FOOTER
+*/
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  padding: 0.25em;
+  background-color: #8F23A6;
+  color: white;
+}
+footer p {
+  text-align: center;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=style.css.map */
