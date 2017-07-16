@@ -13,14 +13,6 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
-		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
 
 	</head>
 	<body <?php body_class(); ?>>
@@ -31,12 +23,10 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 
-			
-
 				<div class="top-bar">
 					<!-- nav -->
 					<nav class="nav" role="navigation">
-						<img a href="/" class="logo" src="\wp-content\themes\calming-audio\img\ca-logo-white.svg" /a>
+						<a href="/"><svg class="logo"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#logo"/></svg></a>
 						<?php calmingaudio_nav(); ?>
 					</nav>
 					<!-- /nav -->
@@ -45,24 +35,21 @@
 			<div class="header-icons">
 					<!-- social media icons -->
 					<div class="social-media">
-						<img src= "\wp-content\themes\calming-audio\img\twitter.svg">
-						<img src= "\wp-content\themes\calming-audio\img\facebook.svg"> 
-						<img src= "\wp-content\themes\calming-audio\img\github.svg"> 
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#twitter"/></svg>
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#facebook"/></svg>
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#github"/></svg>
 					</div>
 					<!-- social media icons -->
 
 					<!-- play controls -->
 					<div class="play-controls">
-						<img src= "\wp-content\themes\calming-audio\img\volume-x.svg">
-						<img src= "\wp-content\themes\calming-audio\img\volume-2.svg">
-						<img src= "\wp-content\themes\calming-audio\img\pause-circle.svg">
-						<img src= "\wp-content\themes\calming-audio\img\play-circle.svg">
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/></svg>
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/></svg>
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/></svg>
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/></svg>
 					</div>
 					<!-- play controls -->
 			</div>
-
-
-
 
 			</header>
 			<!-- /header -->
