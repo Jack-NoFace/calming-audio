@@ -48,6 +48,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*///////////////
 /// BOX-SIZING
 */
+@import url("https://fonts.googleapis.com/css?family=Lato");
 html {
   box-sizing: border-box;
 }
@@ -476,6 +477,7 @@ html {
 */
 body {
   background-color: #8F23A6;
+  font-family: 'Lato', sans-serif;
   margin: 0 0 100px 0;
   padding: 0;
   height: 100%;
@@ -484,6 +486,15 @@ body {
 
 /*///////////////
 /// HEADER
+*/
+header {
+  background-color: #8800FF;
+}
+
+/*for reference when get to it
+
+active nav items = rgba(255,255,255,0.2);
+inactive = rgba(0,0,0,0.8);
 */
 /*///////////////
 /// FOOTER
@@ -496,13 +507,13 @@ footer {
   width: 100%;
   padding: 0.25em;
   background-color: #8800FF;
-  color: white;
+  color: #ffffff;
 }
 footer p {
   text-align: center;
 }
 footer a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 footer a:hover {

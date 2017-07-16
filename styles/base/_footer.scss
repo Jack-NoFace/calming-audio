@@ -9,15 +9,15 @@ footer {
     height: 100px;
     width: 100%;
     padding: 0.25em;
-    background-color: #8800FF;
-    color: white;
+    background-color: $color-dark-purple;
+    color: $color-white;
 
     p {
         text-align: center;
     }
 
     a {
-        color: white;
+        color:$color-white;
         text-decoration: none;
     }
 
