@@ -90,18 +90,9 @@ nav {
     border: solid $color-white;
     border-radius: 50%;
     padding: 5px;
+    background-color: $color-white;
 }
 
-
-.social-media img {
-    display: inline;
-    width: 28px;
-    height: 28px;
-    padding: 2px 10px;
-    /*border: solid 1px black;
-    border-radius: 50%;*/
-
-}
 
 .social-media a {
     display: inline-block;
