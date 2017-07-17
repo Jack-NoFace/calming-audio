@@ -487,6 +487,14 @@ body {
 }
 
 /*///////////////
+/// SVG
+*/
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/*///////////////
 /// HEADER
 */
 header {
