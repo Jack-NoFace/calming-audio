@@ -493,24 +493,29 @@ header {
   background-color: #8800FF;
 }
 
+.top-bar {
+  padding: 0 10px;
+}
+
 nav.nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  vertical-align: center;
 }
 nav .logo {
   width: 63px;
   height: 63px;
-  margin-left: 1em;
   fill: #ffffff;
 }
 nav .logo a {
   margin: 0;
   padding: 0;
+  margin-left: 1em;
 }
 nav ul {
   margin: 0;
-  padding: 10px;
+  padding-top: 10px;
   list-style: none;
   text-align: right;
 }

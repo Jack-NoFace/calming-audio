@@ -6,6 +6,10 @@ header {
     background-color: $color-dark-purple;
     }
 
+.top-bar {
+    padding: 0 10px;
+}
+
 
 nav {
     
@@ -13,23 +17,24 @@ nav {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        vertical-align: center;
     }
 
     .logo {
-    width: 63px;
-    height: 63px;
-    margin-left: 1em;
-    fill: $color-white;
+        width: 63px;
+        height: 63px;
+        fill: $color-white;
     }   
 
     .logo a {
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
+        margin-left: 1em;
     }
 
     ul {
         margin: 0;
-        padding: 10px;
+        padding-top: 10px;
         list-style: none;
         text-align: right;
     }
