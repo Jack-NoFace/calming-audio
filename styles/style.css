@@ -523,12 +523,16 @@ nav ul {
   text-align: right;
 }
 nav li {
-  margin: 2px 1px;
   display: inline-block;
+  padding: 0 5px;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 10px 20px;
   font-weight: 700;
+}
+nav li a {
+  display: inline-block;
+  margin: 2px 1px;
+  padding: 5px 20px;
 }
 nav li.current_page_item {
   background-color: rgba(0, 0, 0, 0.6);
@@ -577,11 +581,6 @@ nav li a {
   outline: none;
 }
 
-/*for reference when get to it
-
-active nav items = rgba(255,255,255,0.2);
-inactive = rgba(0,0,0,0.8);
-*/
 /*///////////////
 /// FOOTER
 */
