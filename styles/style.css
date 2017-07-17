@@ -520,13 +520,13 @@ nav ul {
   padding-left: 0;
   padding-bottom: 10px;
   list-style: none;
-  text-align: right;
 }
 nav li {
   display: inline-block;
   padding: 0 5px;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
   font-weight: 700;
 }
 nav li a {
