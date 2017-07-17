@@ -35,9 +35,9 @@
 			<div class="header-icons">
 					<!-- social media icons -->
 					<div class="social-media">
-						<a href="#"><svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#twitter"/></svg></a>
-						<a href="#"><svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#facebook"/></svg></a>
-						<a href="#"><svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#github"/></svg></a>
+						<a href="#"><svg class="icon social"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#twitter"/></svg></a>
+						<a href="#"><svg class="icon social"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#facebook"/></svg></a>
+						<a href="#"><svg class="icon social"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#github"/></svg></a>
 					</div>
 					<!-- social media icons -->
 

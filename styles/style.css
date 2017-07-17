@@ -558,6 +558,14 @@ nav li a {
   padding: 1em;
 }
 
+.social {
+  height: 30px;
+  width: 30px;
+  border: solid #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
 .social-media img {
   display: inline;
   width: 28px;
