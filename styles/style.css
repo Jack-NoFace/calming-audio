@@ -573,6 +573,10 @@ nav li a {
   display: inline-block;
 }
 
+.social-media a:focus {
+  outline: none;
+}
+
 /*for reference when get to it
 
 active nav items = rgba(255,255,255,0.2);

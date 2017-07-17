@@ -96,9 +96,14 @@ nav {
 }
 
 
+
 .social-media a {
     display: inline-block;
     
+}
+
+.social-media a:focus {
+    outline: none;
 }
 
 
