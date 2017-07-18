@@ -3,29 +3,21 @@
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<!-- post thumbnail -->
-		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
-			</a>
-		<?php endif; ?>
-		<!-- /post thumbnail -->
+        <div>
+			<?php the_post_thumbnail(); ?>
+            <?php the_title(); ?></br>
+			<audio loop id="audio_player_<?php echo $id;?>">
+				<source src="<?php the_field('media'); ?>" type="audio/mp3">
+				Your browser does not support the audio element.
+			</audio>
 
-		<!-- post title -->
-		<h2>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-		</h2>
-		<!-- /post title -->
-
-		<!-- post details -->
-		<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-		<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-		<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-		<!-- /post details -->
-
-		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-
-		<?php edit_post_link(); ?>
+			<div>
+				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').play()">Play</button>
+				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').pause()">Pause</button>
+				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').volume += 0.1">Vol+ </button>
+				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').volume -= 0.1">Vol- </button>
+			</div>
+     	</div>
 
 	</article>
 	<!-- /article -->
