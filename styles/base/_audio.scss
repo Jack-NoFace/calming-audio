@@ -1,0 +1,20 @@
+/*///////////////
+/// BODY
+*///////////////
+
+.audio-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    .soundbyte {
+        display: inline-block;
+        padding-top: 30px;
+        margin: 0 1em;
+    }
+
+    .soundbyte p {
+        text-align: center;
+    }
+}
+
