@@ -574,7 +574,6 @@ nav li a {
 .social {
   height: 30px;
   width: 30px;
-  border: solid #ffffff;
   border-radius: 50%;
   padding: 5px;
   margin: 0 1.5px;
@@ -623,7 +622,10 @@ footer a:hover {
   fill: #ffffff;
 }
 
-.social.icon {
+.social-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0;
   fill: #8F23A6;
 }
 
