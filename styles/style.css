@@ -572,8 +572,8 @@ nav li a {
 }
 
 .social {
-  height: 30px;
-  width: 30px;
+  height: 26px;
+  width: 26px;
   border-radius: 50%;
   padding: 5px;
   margin: 0 1.5px;
@@ -586,6 +586,23 @@ nav li a {
 
 .social-media a:focus {
   outline: none;
+}
+
+/*///////////////
+/// BODY
+*/
+.audio-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.audio-wrapper .soundbyte {
+  display: inline-block;
+  padding-top: 30px;
+  margin: 0 1em;
+}
+.audio-wrapper .soundbyte p {
+  text-align: center;
 }
 
 /*///////////////
@@ -623,10 +640,17 @@ footer a:hover {
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   padding: 0;
   fill: #8F23A6;
+}
+
+.audio-icon {
+  fill: #ffffff;
+  width: 30px;
+  height: 30px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
