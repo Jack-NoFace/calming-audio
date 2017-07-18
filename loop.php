@@ -1,12 +1,14 @@
+
+<div class="audio-wrapper">
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
+	
 	<!-- article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
+	
 		<div class="soundbyte">	 
 
 			<?php the_post_thumbnail('thumbnail', array ('class' => 'audio-icon')); ?>
-            <p><?php the_title(); ?></p></br>
+            
 			<audio loop id="audio_player_<?php echo $id;?>">
 				<source src="<?php the_field('media'); ?>" type="audio/mp3">
 				Your browser does not support the audio element.
@@ -18,11 +20,14 @@
 				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').volume += 0.1">Vol+ </button>
 				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').volume -= 0.1">Vol- </button>
 			</div>
-     	</div>
 
+			<p><?php the_title(); ?></p></br>
+		 </div>
+	
+		
 	</article>
 	<!-- /article -->
-
+	
 <?php endwhile; ?>
 
 <?php else: ?>
@@ -34,3 +39,4 @@
 	<!-- /article -->
 
 <?php endif; ?>
+</div>
