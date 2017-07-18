@@ -542,7 +542,7 @@ nav li a {
   margin: 2px 1px;
   padding: 5px 20px;
 }
-nav li.current_page_item {
+nav li.current-menu-item {
   background-color: rgba(0, 0, 0, 0.6);
 }
 nav li a {
