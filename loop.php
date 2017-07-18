@@ -3,9 +3,10 @@
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <div>
-			<?php the_post_thumbnail(); ?>
-            <?php the_title(); ?></br>
+		<div class="soundbyte">	 
+
+			<?php the_post_thumbnail('thumbnail', array ('class' => 'audio-icon')); ?>
+            <p><?php the_title(); ?></p></br>
 			<audio loop id="audio_player_<?php echo $id;?>">
 				<source src="<?php the_field('media'); ?>" type="audio/mp3">
 				Your browser does not support the audio element.
