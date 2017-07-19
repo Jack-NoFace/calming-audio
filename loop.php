@@ -26,7 +26,15 @@
 
 			<p><?php the_title(); ?></p></br>
 		 </div>
-	
+		<script>
+			window.SetVolume = function(val)
+			{
+			var player = document.getElementById('audio_player_<?php echo $id; ?>');
+			console.log('Before: ' + player.volume);
+			player.volume = val / 100;
+			console.log('After: ' + player.volume);
+			}
+		</script>
 		
 	</article>
 	<!-- /article -->
