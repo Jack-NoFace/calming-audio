@@ -7,18 +7,13 @@
 	
 		<div class="soundbyte">	 
 
-			<?php the_post_thumbnail('thumbnail', array ('class' => 'audio-icon')); ?>
-            
-			<audio loop id="audio_player_<?php echo $id;?>">
-				<source src="<?php the_field('media'); ?>" type="audio/mp3">
-				Your browser does not support the audio element.
-			</audio>
-
-			<div>
-				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').play()">Play</button>
-				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').pause()">Pause</button>
-				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').volume += 0.1">Vol+ </button>
-				<button onclick="document.getElementById('audio_player_<?php echo $id;?>').volume -= 0.1">Vol- </button>
+				<div>
+					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/ onclick="document.getElementById('audio_player_<?php echo $id;?>').play()"></svg> 
+					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/ onclick="document.getElementById('audio_player_<?php echo $id;?>').pause()"></svg> </br>
+					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/ onclick="document.getElementById('audio_player_<?php echo $id;?>').volume += 0.1"></svg>
+					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/ onclick="document.getElementById('audio_player_<?php echo $id;?>').volume -= 0.1"></svg>
+					<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+				</div>
 			</div>
 
 			<p><?php the_title(); ?></p></br>
