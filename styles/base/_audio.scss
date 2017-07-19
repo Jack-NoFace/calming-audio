@@ -3,18 +3,29 @@
 *///////////////
 
 .audio-wrapper {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
 
     .soundbyte {
         display: inline-block;
         padding-top: 30px;
-        margin: 0 1em;
+        margin: 0 0.5em;
     }
 
     .soundbyte p {
         text-align: center;
+    }
+
+    .soundbyte-icons {
+        display: flex;
+    } 
+
+
+
+    img {
+        width: 26px;
+        height: 26px;
     }
 }
 

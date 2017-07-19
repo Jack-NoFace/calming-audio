@@ -6,6 +6,14 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
 	
 		<div class="soundbyte">	 
+			<div class="soundbyte-icons">
+				<?php the_post_thumbnail('thumbnail', array ('class' => 'audio-icon')); ?>
+				
+				<audio loop id="audio_player_<?php echo $id;?>">
+					<source src="<?php the_field('media'); ?>" type="audio/mp3">
+					Your browser does not support the audio element.
+				</audio>
+				
 
 				<div>
 					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/ onclick="document.getElementById('audio_player_<?php echo $id;?>').play()"></svg> 

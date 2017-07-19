@@ -592,17 +592,24 @@ nav li a {
 /// BODY
 */
 .audio-wrapper {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   text-align: center;
 }
 .audio-wrapper .soundbyte {
   display: inline-block;
   padding-top: 30px;
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 .audio-wrapper .soundbyte p {
   text-align: center;
+}
+.audio-wrapper .soundbyte-icons {
+  display: flex;
+}
+.audio-wrapper img {
+  width: 26px;
+  height: 26px;
 }
 
 /*///////////////
@@ -651,6 +658,7 @@ footer a:hover {
   width: 30px;
   height: 30px;
   text-align: left;
+  padding-right: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
