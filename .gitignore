@@ -1,6 +1,6 @@
 .DS_Store
-
-
+pattern-library/src/assets/toolkit/styles/toolkit.scss
+pattern-library/src/assets/toolkit/styles/toolkit.scss.map
 
 # Created by https://www.gitignore.io/api/node,sass,grunt,windows,wordpress
 

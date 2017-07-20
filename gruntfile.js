@@ -33,7 +33,8 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {                         // Dictionary of files
-                    'styles/style.css': 'styles/main.scss'
+                    'styles/style.css': 'styles/main.scss',
+                    'pattern-library/src/assets/toolkit/styles/toolkit.scss': 'styles/main.scss'  // 'destination': 'source'
                 }
             }
         },
