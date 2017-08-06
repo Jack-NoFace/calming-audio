@@ -5,7 +5,7 @@
 				
 				<div class="bottom-line">
 					<div class="social-media">
-						<a href="#"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#twitter"/></svg></div></a>
+						<a href="https://twitter.com/calmingaudio"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#twitter"/></svg></div></a>
 						<a href="https://www.facebook.com/Calming-Audio-824246891033884/"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#facebook"/></svg></div></a>
 						<a href="https://github.com/JackDaviesWork/calming-audio"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#github"/></svg></div></a>
 						
