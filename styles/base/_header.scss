@@ -16,7 +16,7 @@ header {
     
 }
 
-.test1 {
+.breakpoint-nav {
     display: inline-block;
     width: 100%;
     margin: 0;
@@ -35,10 +35,10 @@ header {
     
     @media all and (min-width: $bp-desktop) {
             width: 60%;
-        }
+        } 
 }
 
-.test2 {
+.breakpoint-play-controls {
     width: 100%;
     @media all and (min-width: $bp-mobile) {
         display: inline-block;
@@ -110,16 +110,6 @@ nav {
         }
     }
 
-    li a{
-        display: inline-block;
-        margin: 2px 1px;
-        padding: 5px 20px;
-
-    @media all and (min-width: $bp-mobile) {
-            padding: 5px 25px;
-        }
-    }
-
     li.current-menu-item {
         background-color: rgba(0,0,0,0.6);
     }
@@ -129,8 +119,10 @@ nav {
         display: block;
         color: $color-white;
         text-decoration: none;
+        margin: 2px 1px;
+        padding: 5px 20px;
     }
-}
+} 
 
 .play-controls {
     text-align: left;
@@ -140,7 +132,7 @@ nav {
         text-align: right;
     }
 }
-
+ 
 .play-controls img {
     padding: 2px;
 }

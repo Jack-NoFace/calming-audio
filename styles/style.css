@@ -511,54 +511,54 @@ header {
   }
 }
 
-.test1 {
+.breakpoint-nav {
   display: inline-block;
   width: 100%;
   margin: 0;
 }
 @media all and (min-width: 440px) {
-  .test1 {
+  .breakpoint-nav {
     width: 100%;
   }
 }
 @media all and (min-width: 768px) {
-  .test1 {
+  .breakpoint-nav {
     width: 65%;
   }
 }
 @media all and (min-width: 1024px) {
-  .test1 {
+  .breakpoint-nav {
     width: 61%;
   }
 }
 @media all and (min-width: 1400px) {
-  .test1 {
+  .breakpoint-nav {
     width: 60%;
   }
 }
 
-.test2 {
+.breakpoint-play-controls {
   width: 100%;
 }
 @media all and (min-width: 375px) {
-  .test2 {
+  .breakpoint-play-controls {
     display: inline-block;
     width: 50%;
     margin: 0;
   }
 }
 @media all and (min-width: 768px) {
-  .test2 {
+  .breakpoint-play-controls {
     width: 34%;
   }
 }
 @media all and (min-width: 1024px) {
-  .test2 {
+  .breakpoint-play-controls {
     width: 38%;
   }
 }
 @media all and (min-width: 1400px) {
-  .test2 {
+  .breakpoint-play-controls {
     width: 37%;
   }
 }
@@ -607,16 +607,6 @@ nav li {
     margin: 0 5px;
   }
 }
-nav li a {
-  display: inline-block;
-  margin: 2px 1px;
-  padding: 5px 20px;
-}
-@media all and (min-width: 375px) {
-  nav li a {
-    padding: 5px 25px;
-  }
-}
 nav li.current-menu-item {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -624,6 +614,8 @@ nav li a {
   display: block;
   color: #ffffff;
   text-decoration: none;
+  margin: 2px 1px;
+  padding: 5px 20px;
 }
 
 .play-controls {

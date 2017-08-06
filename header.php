@@ -25,7 +25,7 @@
 
 				<div class="top-bar">
 				
-				<div class="test1">
+				<div class="breakpoint-nav">
 					<!-- nav -->
 					<nav class="nav" role="navigation">
 						<svg class="logo"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#logo"/></svg>
@@ -34,7 +34,7 @@
 				</div>
 					<!-- /nav -->
 				<!-- play controls -->
-				<div class="test2">
+				<div class="breakpoint-play-controls">
 				<div class="play-controls">
 					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/></svg>
 					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/></svg>
