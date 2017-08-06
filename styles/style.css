@@ -504,6 +504,61 @@ header {
 .top-bar {
   padding: 10px 20px 2px 20px;
 }
+    margin: 0 auto;
+  }
+}
+
+.test1 {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+@media all and (min-width: 440px) {
+  .test1 {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) {
+  .test1 {
+    width: 65%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .test1 {
+    width: 61%;
+  }
+}
+@media all and (min-width: 1400px) {
+  .test1 {
+    width: 60%;
+  }
+}
+
+.test2 {
+  width: 100%;
+}
+@media all and (min-width: 375px) {
+  .test2 {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+  }
+}
+@media all and (min-width: 768px) {
+  .test2 {
+    width: 34%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .test2 {
+    width: 38%;
+  }
+}
+@media all and (min-width: 1400px) {
+  .test2 {
+    width: 39%;
+  }
+}
 
 nav.nav {
   display: flex;
@@ -523,11 +578,16 @@ nav .logo a {
   margin-left: 1em;
 }
 nav ul {
-  margin: 0;
+  margin: 0 0 0 0.25em;
   padding-top: 10px;
   padding-left: 0;
   padding-bottom: 10px;
   list-style: none;
+}
+@media all and (min-width: 375px) {
+  nav ul {
+    margin-left: 1em;
+  }
 }
 nav li {
   display: inline-block;
@@ -536,6 +596,12 @@ nav li {
   background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
   font-weight: 700;
+}
+@media all and (min-width: 375px) {
+  nav li {
+    padding: 0 10px;
+    margin: 0 5px;
+  }
 }
 nav li a {
   display: inline-block;
@@ -553,12 +619,11 @@ nav li a {
 
 .play-controls {
   text-align: left;
-  padding: 0.25em 0 1em 1.5em;
+  padding: 0.25em 0 1em 0.5em;
 }
 @media all and (min-width: 768px) {
   .play-controls {
-    text-align: center;
-    display: block;
+    text-align: right;
   }
 }
 

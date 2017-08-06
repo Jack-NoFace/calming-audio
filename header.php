@@ -24,23 +24,29 @@
 			<header class="header clear" role="banner">
 
 				<div class="top-bar">
+				
+				<div class="test1">
 					<!-- nav -->
 					<nav class="nav" role="navigation">
-						<a href="/"><svg class="logo"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#logo"/></svg></a>
+						<svg class="logo"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#logo"/></svg>
 						<?php calmingaudio_nav(); ?>
 					</nav>
-					<!-- /nav -->
 				</div>
-
-			
+					<!-- /nav -->
 				<!-- play controls -->
+				<div class="test2">
 				<div class="play-controls">
 					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/></svg>
 					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/></svg>
 					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/></svg>
 					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/></svg>
 				</div>
+				</div>
 				<!-- play controls -->
+				</div>
+
+			
+
 			
 
 			</header>
