@@ -34,11 +34,7 @@
 
 			<div class="header-icons">
 					<!-- social media icons -->
-					<div class="social-media">
-						<a href="#"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#twitter"/></svg></div></a>
-						<a href="#"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#facebook"/></svg></div></a>
-						<a href="#"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#github"/></svg></div></a>
-					</div>
+
 					<!-- social media icons -->
 
 					<!-- play controls -->

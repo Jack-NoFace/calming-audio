@@ -511,11 +511,23 @@ nav.nav {
   justify-content: space-between;
   align-items: center;
 }
+@media all and (min-width: 768px) {
+  nav.nav {
+    display: block;
+    text-align: center;
+  }
+}
 nav .logo {
   width: 63px;
   height: 35px;
   fill: #ffffff;
   padding-top: 5px;
+}
+@media all and (min-width: 768px) {
+  nav .logo {
+    text-align: center;
+    display: block;
+  }
 }
 nav .logo a {
   margin: 0;
@@ -537,6 +549,12 @@ nav li {
   text-align: center;
   font-weight: 700;
 }
+@media all and (min-width: 768px) {
+  nav li {
+    padding: 0 15px;
+    margin: 0 15px;
+  }
+}
 nav li a {
   display: inline-block;
   margin: 2px 1px;
@@ -556,36 +574,26 @@ nav li a {
   justify-content: space-between;
   padding: 10px 20px 2px 20px;
 }
+@media all and (min-width: 768px) {
+  .header-icons {
+    display: inline-block;
+    width: 100%;
+  }
+}
 
 .play-controls {
   text-align: right;
   padding: 0.25em 0 1em 2em;
 }
+@media all and (min-width: 768px) {
+  .play-controls {
+    text-align: center;
+    display: block;
+  }
+}
 
 .play-controls img {
   padding: 2px;
-}
-
-.social-media {
-  text-align: left;
-  padding: 0.25em 1em 1em 0;
-}
-
-.social {
-  height: 26px;
-  width: 26px;
-  border-radius: 50%;
-  padding: 5px;
-  margin: 0 1.5px;
-  background-color: #ffffff;
-}
-
-.social-media a {
-  display: inline-block;
-}
-
-.social-media a:focus {
-  outline: none;
 }
 
 /*///////////////
@@ -623,6 +631,7 @@ footer {
 }
 footer p {
   text-align: center;
+  margin: 0.5em;
 }
 footer a {
   color: #ffffff;
@@ -630,6 +639,40 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+footer .bottom-line {
+  width: 100%;
+  margin-top: 0.5em;
+  text-align: center;
+}
+@media all and (min-width: 375px) {
+  footer .bottom-line {
+    margin-top: 1em;
+  }
+}
+footer .social-media {
+  display: inline-block;
+  text-align: left;
+  padding: 0.25em 0.25em 0 0;
+  margin-left: 0.5em;
+}
+footer .social {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 1.5px;
+  background-color: #ffffff;
+}
+footer .social-media a {
+  display: inline-block;
+}
+footer .social-media a:focus {
+  outline: none;
+}
+footer .copyright {
+  margin: 0;
+  display: inline-block;
 }
 
 /*///////////////

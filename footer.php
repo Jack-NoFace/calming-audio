@@ -1,11 +1,22 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
 				<p>Designed by <a href="https://whatjackhasmade.co.uk">Jack Davies</a> & Developed by <a href="https://benmichaeljoy.com">Ben Joy</a></a></p>
-				<p>&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. </p>
-				<!-- /copyright -->
+				
+				
+				<div class="bottom-line">
+					<div class="social-media">
+						<a href="#"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#twitter"/></svg></div></a>
+						<a href="#"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#facebook"/></svg></div></a>
+						<a href="#"><div class="social"><svg class="icon social-icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#github"/></svg></div></a>
+						
+					</div>
+
+					<div class="copyright">
+					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. </p>
+					</div>
+				</div>
+
+
 
 			</footer>
 			<!-- /footer -->

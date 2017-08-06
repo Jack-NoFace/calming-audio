@@ -14,6 +14,7 @@ footer {
 
     p {
         text-align: center;
+        margin: 0.5em;
     }
 
     a {
@@ -24,6 +25,50 @@ footer {
     a:hover {
         text-decoration: underline;
     }
+
+    .bottom-line {
+        width: 100%;
+        margin-top: 0.5em;
+        text-align: center;
+
+        @media all and (min-width: $bp-mobile) {
+        margin-top: 1em;
+        }
+    }
+
+    .social-media {
+        display: inline-block;
+        text-align: left;
+        padding: 0.25em 0.25em 0 0;
+        margin-left: 0.5em;
+}
+
+    .social {
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 0 1.5px;
+        background-color: $color-white;
+    }
+
+
+
+    .social-media a {
+        display: inline-block;
+        
+    }
+
+    .social-media a:focus {
+        outline: none;
+    }
+
+    .copyright{
+        margin: 0;
+        display: inline-block;
+    }
+
+    
 }
 
 
