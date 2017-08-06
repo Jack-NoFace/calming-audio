@@ -8,10 +8,59 @@ header {
 
 .top-bar {
     padding: 10px 20px 2px 20px;
+
+    @media all and (min-width: $bp-desktop) {
+            width: 75%;
+            margin: 0 auto;
+        }
+    
+}
+
+.test1 {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+
+    @media all and (min-width: $bp-mobile-large) {
+            width: 100%;
+        }
+
+    @media all and (min-width: $bp-tablet) {
+            width: 65%;
+        }
+
+    @media all and (min-width: $bp-tablet-large) {
+            width: 61%;
+        }
+    
+    @media all and (min-width: $bp-desktop) {
+            width: 60%;
+        }
+}
+
+.test2 {
+    width: 100%;
+    @media all and (min-width: $bp-mobile) {
+        display: inline-block;
+        width: 50%;
+        margin: 0;
+    }
+
+    @media all and (min-width: $bp-tablet) {
+            width: 34%;
+        }
+
+    @media all and (min-width: $bp-tablet-large) {
+            width: 38%;
+        }
+
+    @media all and (min-width: $bp-desktop) {
+            width: 37%; 
+        }
 }
 
 
-nav {
+nav { 
     
     &.nav {
         display: flex;
@@ -24,7 +73,7 @@ nav {
         width: 63px;
         height: 35px;
         fill: $color-white;
-        padding-top: 5px;
+        padding-top: 5px;        
     }   
 
     .logo a {
@@ -34,28 +83,41 @@ nav {
     }
 
     ul {
-        margin: 0;
+        margin: 0 0 0 0.25em;
         padding-top: 10px;
         padding-left: 0;
         padding-bottom: 10px;
         list-style: none;
+
+         @media all and (min-width: $bp-mobile) {
+            margin-left: 1em;
+        }
      
     }
 
     li {
         display: inline-block;
         padding: 0 5px;
+        margin-bottom: 5px;
         border-radius: 50px;
         background-color: rgba(255,255,255,0.2);
         text-align: center;
         font-weight: 700;
 
+        @media all and (min-width: $bp-mobile) {
+            padding: 0 10px;
+            margin: 0 5px;
+        }
     }
 
     li a{
         display: inline-block;
         margin: 2px 1px;
         padding: 5px 20px;
+
+    @media all and (min-width: $bp-mobile) {
+            padding: 5px 25px;
+        }
     }
 
     li.current-menu-item {
@@ -72,11 +134,10 @@ nav {
 
 .play-controls {
     text-align: left;
-    padding: 0.25em 0 1em 1.5em;
+    padding: 0.25em 0 1em 0.5em;
 
     @media all and (min-width: $bp-tablet) {
-        text-align: center;
-        display: block;
+        text-align: right;
     }
 }
 

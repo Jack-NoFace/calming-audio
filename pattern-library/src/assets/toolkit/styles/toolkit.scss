@@ -559,7 +559,7 @@ header {
 }
 @media all and (min-width: 1400px) {
   .test2 {
-    width: 39%;
+    width: 37%;
   }
 }
 
@@ -595,6 +595,7 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 0 5px;
+  margin-bottom: 5px;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -610,6 +611,11 @@ nav li a {
   display: inline-block;
   margin: 2px 1px;
   padding: 5px 20px;
+}
+@media all and (min-width: 375px) {
+  nav li a {
+    padding: 5px 25px;
+  }
 }
 nav li.current-menu-item {
   background-color: rgba(0, 0, 0, 0.6);
