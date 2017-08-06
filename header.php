@@ -32,20 +32,16 @@
 					<!-- /nav -->
 				</div>
 
-			<div class="header-icons">
-					<!-- social media icons -->
-
-					<!-- social media icons -->
-
-					<!-- play controls -->
-					<div class="play-controls">
-						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/></svg>
-						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/></svg>
-						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/></svg>
-						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/></svg>
-					</div>
-					<!-- play controls -->
-			</div>
+			
+				<!-- play controls -->
+				<div class="play-controls">
+					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/></svg>
+					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/></svg>
+					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/></svg>
+					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/></svg>
+				</div>
+				<!-- play controls -->
+			
 
 			</header>
 			<!-- /header -->

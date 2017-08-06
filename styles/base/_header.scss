@@ -43,8 +43,6 @@ nav {
     }
 
     li {
-        
-        
         display: inline-block;
         padding: 0 5px;
         border-radius: 50px;
@@ -72,15 +70,14 @@ nav {
     }
 }
 
-.header-icons {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px 2px 20px;
-}
-
 .play-controls {
-    text-align: right;
-    padding: 0.25em 0 1em 2em;
+    text-align: left;
+    padding: 0.25em 0 1em 1.5em;
+
+    @media all and (min-width: $bp-tablet) {
+        text-align: center;
+        display: block;
+    }
 }
 
 .play-controls img {
