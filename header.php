@@ -18,32 +18,33 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+
 
 			<!-- header -->
 			<header class="header clear" role="banner">
 
 				<div class="top-bar">
 				
-				<div class="breakpoint-nav">
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<svg class="logo"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#logo"/></svg>
-						<?php calmingaudio_nav(); ?>
-					</nav>
-				</div>
-					<!-- /nav -->
+					<div class="breakpoint-nav">
+						<!-- nav -->
+						<nav class="nav" role="navigation">
+							<svg class="logo"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#logo"/></svg>
+							<?php calmingaudio_nav(); ?>
+						</nav>
+					</div>
+						<!-- /nav -->
+				
 				<!-- play controls -->
 				<div class="breakpoint-play-controls">
-				<div class="play-controls">
-					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/></svg>
-					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/></svg>
-					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/></svg>
-					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/></svg>
-				</div>
+					<div class="play-controls">
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/></svg>
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/></svg>
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/></svg>
+						<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/></svg>
+					</div>
 				</div>
 				<!-- play controls -->
-				</div>
+				
 
 			
 
