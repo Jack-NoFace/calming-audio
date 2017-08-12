@@ -510,6 +510,14 @@ header {
 .top-bar {
   padding: 10px 20px 2px 20px;
 }
+@media all and (min-width: 768px) {
+  .top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 12px 20px;
+  }
+}
 @media all and (min-width: 1400px) {
   .top-bar {
     width: 75%;
@@ -529,43 +537,23 @@ header {
 }
 @media all and (min-width: 768px) {
   .breakpoint-nav {
-    width: 65%;
+    flex: 2 0 0;
   }
 }
 @media all and (min-width: 1024px) {
   .breakpoint-nav {
-    width: 61%;
+    flex: 1.6 0 0;
   }
 }
 @media all and (min-width: 1400px) {
   .breakpoint-nav {
-    width: 60%;
+    flex: 1.6 0 0;
   }
 }
 
-.breakpoint-play-controls {
-  width: 100%;
-}
-@media all and (min-width: 375px) {
-  .breakpoint-play-controls {
-    display: inline-block;
-    width: 50%;
-    margin: 0;
-  }
-}
 @media all and (min-width: 768px) {
   .breakpoint-play-controls {
-    width: 34%;
-  }
-}
-@media all and (min-width: 1024px) {
-  .breakpoint-play-controls {
-    width: 38%;
-  }
-}
-@media all and (min-width: 1400px) {
-  .breakpoint-play-controls {
-    width: 37%;
+    flex: 1 0 0;
   }
 }
 
@@ -631,6 +619,7 @@ nav li a {
 @media all and (min-width: 768px) {
   .play-controls {
     text-align: right;
+    padding-top: .75em;
   }
 }
 

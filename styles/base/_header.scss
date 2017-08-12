@@ -9,6 +9,14 @@ header {
 .top-bar {
     padding: 10px 20px 2px 20px;
 
+
+     @media all and (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px 20px 12px 20px; 
+        }
+
     @media all and (min-width: $bp-desktop) {
             width: 75%;
             margin: 0 auto;
@@ -26,36 +34,22 @@ header {
         }
 
     @media all and (min-width: $bp-tablet) {
-            width: 65%;
+            flex: 2 0 0;
         }
 
     @media all and (min-width: $bp-tablet-large) {
-            width: 61%;
+            flex: 1.6 0 0;
         }
     
     @media all and (min-width: $bp-desktop) {
-            width: 60%;
-        } 
+            flex: 1.6 0 0;
+        }
 }
 
 .breakpoint-play-controls {
-    width: 100%;
-    @media all and (min-width: $bp-mobile) {
-        display: inline-block;
-        width: 50%;
-        margin: 0;
-    }
 
     @media all and (min-width: $bp-tablet) {
-            width: 34%;
-        }
-
-    @media all and (min-width: $bp-tablet-large) {
-            width: 38%;
-        }
-
-    @media all and (min-width: $bp-desktop) {
-            width: 37%; 
+            flex: 1 0 0;
         }
 }
 
@@ -130,6 +124,7 @@ nav {
 
     @media all and (min-width: $bp-tablet) {
         text-align: right;
+        padding-top: .75em;
     }
 }
  
