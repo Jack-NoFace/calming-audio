@@ -662,13 +662,15 @@ nav li a {
 /// FOOTER
 */
 footer {
-  bottom: 0;
-  left: 0;
-  height: 100px;
   width: 100%;
   padding: 0.25em;
   background-color: #8800FF;
   color: #ffffff;
+}
+@media all and (min-width: 768px) {
+  footer {
+    padding: 1em;
+  }
 }
 footer p {
   text-align: center;
