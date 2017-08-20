@@ -715,6 +715,7 @@ footer .copyright {
   height: 28px;
   padding: 0 2px;
   fill: #ffffff;
+  cursor: pointer;
 }
 
 .social-icon {
