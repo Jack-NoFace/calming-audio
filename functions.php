@@ -38,6 +38,7 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 include_once ('includes/add_at_glance_custom_post.php');
+include_once ('includes/add_duplicate_post.php');
 include_once ('includes/add_link_pattern_library.php');
 include_once ('includes/add_scripts.php');
 include_once ('includes/add_slug_to_body.php');

@@ -14,19 +14,14 @@
 					Your browser does not support the audio element.
 				</audio>
 
-
 				<div>
-					<svg class="icon" id="play-<?php echo $id;?>"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/ onclick="play()"></svg>
-
-					<svg class="icon display--none" id="pause-<?php echo $id;?>"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/ onclick="pause()"></svg> </br>
-
-					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-2"/ onclick="document.getElementById('audio_player_<?php echo $id;?>').volume += 0.1"></svg>
-					<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#volume-x"/ onclick="document.getElementById('audio_player_<?php echo $id;?>').volume -= 0.1"></svg>
+					<svg class="icon" id="play-<?php echo $id;?>"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#play-circle"/ onclick="play<?php echo $id;?>()"></svg>
+					<svg class="icon display--none" id="pause-<?php echo $id;?>"><use xlink:href="<?php echo get_template_directory_uri(); ?>/img/icons/sprite-sheet.svg#pause-circle"/ onclick="pause<?php echo $id;?>()"></svg>
 					<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
 				</div>
 			</div>
 
-			<p><?php the_title(); ?></p></br>
+			<h2><?php the_title(); ?></h2></br>
 		 </div>
 		<script>
 			window.SetVolume = function(val)
@@ -37,13 +32,13 @@
 				console.log('After: ' + player.volume);
 			}
 
-			function play() {
+			function play<?php echo $id;?>() {
 				document.getElementById('audio_player_<?php echo $id;?>').play();
 				document.getElementById("play-<?php echo $id;?>").classList.add("display--none");
 				document.getElementById("pause-<?php echo $id;?>").classList.remove("display--none");
 			}
 
-			function pause() {
+			function pause<?php echo $id;?>() {
 				document.getElementById('audio_player_<?php echo $id;?>').pause();
 				document.getElementById("pause-<?php echo $id;?>").classList.add("display--none");
 				document.getElementById("play-<?php echo $id;?>").classList.remove("display--none");
