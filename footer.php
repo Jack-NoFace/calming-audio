@@ -26,32 +26,6 @@
 
 		<?php wp_footer(); ?>
 
-		<script>
-		document.getElementById('increaseMaster').onclick = function() {
-			var sounds = document.getElementsByTagName('audio');
-			for(i=0; i<sounds.length; i++) sounds[i].volume += 0.1;
-		};
-
-		document.getElementById('muteMaster').onclick = function() {
-			var sounds = document.getElementsByTagName('audio');
-			for(i=0; i<sounds.length; i++) sounds[i].volume -= 0.1;
-		};
-
-		document.getElementById('pauseMaster').onclick = function() {
-			document.getElementById("pauseMaster").classList.add("display--none");
-			document.getElementById("playMaster").classList.remove("display--none");
-			var sounds = document.getElementsByTagName('audio');
-			for(i=0; i<sounds.length; i++) sounds[i].pause();
-		};
-
-		document.getElementById('playMaster').onclick = function() {
-			document.getElementById("playMaster").classList.add("display--none");
-			document.getElementById("pauseMaster").classList.remove("display--none");
-			var sounds = document.getElementsByTagName('audio');
-			for(i=0; i<sounds.length; i++) sounds[i].play();
-		};
-		</script>
-
 		<!-- analytics -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
